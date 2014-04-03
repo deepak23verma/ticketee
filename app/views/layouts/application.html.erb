@@ -15,7 +15,10 @@
 <body>
 
 <nav>
-  <%= link_to "Sign up", new_user_path %>  
+  <ul>
+    <%= link_to "Sign up", new_user_path %> 
+    <%= link_to "Sign in", signin_path %> 
+  </ul>
 </nav>
 
 <% flash.each do |key, value| %>
